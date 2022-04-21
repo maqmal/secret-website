@@ -9,7 +9,7 @@ import Password from './components/pass';
 import Pics2 from './components/pics2';
 
 function App() {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   return (
     <main>
       <Switch>
@@ -23,7 +23,7 @@ function App() {
           <Route path="/ily" component={Pics2} exact/>
           </>
           :
-          <Route path="/" component={Password} exact />
+          <Route path="/" exact render={(props) => <Password setActive={setActive} {...props} /> }/>
         }
       </Switch>
     </main>

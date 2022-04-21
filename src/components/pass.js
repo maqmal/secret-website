@@ -1,36 +1,23 @@
-import React, { useState, useCallback } from "react";
+import React, {useState} from "react";
 import { useHistory } from 'react-router-dom';
 
-export default function Password () {
-  const [data,setData] = useState({
-    password:""
-  });
-  const {username,password} = data;
-
-  const changeHandler = e => {
-    setData({...data,[e.target.name]:[e.target.value]});
-  }
+export default function Password ({setActive}) {
 
   const history = useHistory();
-  const submitHandler = e => {
-    e.preventDefault();
-    if (data.password=='191019'){
-      history.push('/wish-card');
-    }
-  }
 
- var passArr = []
+ var passArr = ['','','','','','']
  const clickEvent = (event, last)=>{
     const { value, name } = event.target
+    var indexArr = parseInt(last.split('-')[1])-2
     if(value.length){
-      document.getElementById(last).focus();
+      if(last!=='digit-7'){
+        document.getElementById(last).focus();
+      }
+      passArr[indexArr]=value;
     }
-    passArr.push(value)
-    
     if(passArr[0]==1&&passArr[1]==9&&passArr[2]==1&&passArr[3]==0&&passArr[4]==1&&passArr[5]==9){
+      setActive(true)
       history.push('/wish-card');
-    }else{
-      console.log(false)
     }
   }
 
@@ -71,7 +58,7 @@ export default function Password () {
         }
       }}/>
           <span className="splitter">&ndash;</span>
-          <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" maxLength="1" onChange={(e)=>clickEvent(e,'digit-6')}onKeyPress={(event) => {
+          <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" maxLength="1" onChange={(e)=>clickEvent(e,'digit-7')}onKeyPress={(event) => {
         if (!/[0-9]/.test(event.key)) {
           event.preventDefault();
         }

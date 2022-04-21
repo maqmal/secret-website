@@ -35,19 +35,19 @@ const cardText = {
   `, 
   `Semoga semua cita-cita kamu tercapai, and make your parents proud because their sweet baby girl is so amazing!`, `You could've chosen anybody to share
   your life with and I am so grateful that
-  you used to choose me`, 'Semangat TA nya']
+  you used to choose me`, 'Semangat ngerjain TA cantiik. Ganbatte! You can do it! Go get it sweet girl! It almost done and tadaaa, graduation :D']
   ,
   '#cb7c7a':
   [`Semoga semua cita-cita kamu tercapai, and make your parents proud because their sweet baby girl is so amazing!`, `You could've chosen anybody to share
   your life with and I am so grateful that
-  you used to choose me`, 'Semangat TA nya', `Happy birthday my sweet angel. I wish I could say it directly to you and hug you.
+  you used to choose me`, 'Semangat ngerjain TA cantiik. Ganbatte! You can do it! Go get it sweet girl! It almost done and tadaaa, graduation :D', `Happy birthday my sweet angel. I wish I could say it directly to you and hug you.
   `]
   ,
   '#FFBD69':
   [`You could've chosen anybody to share
   your life with and I'm so grateful that
   I was your choice :)`, 
-  'Semangat TA nya', `Happy birthday my sweet angel. I wish I could say it directly to you and hug you.
+  'Semangat ngerjain TA cantiik. Ganbatte! You can do it! Go get it sweet girl! It almost done and tadaaa, graduation :D', `Happy birthday my sweet angel. I wish I could say it directly to you and hug you.
   `, `Semoga semua cita-cita kamu tercapai, and make your parents proud because their sweet baby girl is so amazing!`]
   ,
   '#E2703A':
