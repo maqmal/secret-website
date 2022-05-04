@@ -7,8 +7,8 @@ const Box = styled.div`
 display:flex;
 cursor:pointer;
 position:fixed;
-left:52.9rem;
-margin-top:100;
+left:5rem;
+top:5rem;
 z-index:10;
 
 &>*:nth-child(1){
@@ -40,8 +40,8 @@ const play = keyframes`
 }
 `
 const Line = styled.span`
-background: ${props => props.theme.text};
-border: 1px solid ${props => props.theme.body};
+background: grey;
+border: 1px solid grey;
 
 animation:${play} 1s ease infinite;
 animation-play-state: ${props => props.click ? "running" : "paused"};
@@ -74,7 +74,7 @@ const SoundBar = () => {
             <Line click={click}/>
 
 
-            <audio src={music} ref={ref} loop/>
+            <audio src={music} ref={ref} loop autoPlay/>
         </Box>
     )
 }

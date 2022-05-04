@@ -1,5 +1,5 @@
 import React from 'react';
-import { Frame, Stack, Scroll } from "framer";
+import { Frame, Stack } from "framer";
 import '../App.scss';
 import CardStack from './cardstack';
 import { useHistory } from 'react-router-dom';
@@ -24,6 +24,7 @@ export default function Intro() {
   const history = useHistory();
   const handleOnClick = useCallback(() => history.push('/iagly'), [history]);
   return (
+    <>
       <Frame 
         background={'black'}
         variants={container}
@@ -45,7 +46,7 @@ export default function Intro() {
             initial="hidden"
             animate="show"
             >
-            <Frame variants={item} background="black" width={700} height={10} radius="5%" style={{color:'white', fontSize:70, verticalAlign:'center'}}><span style={{color:'#E0C097'}}>A Little Birthday Present From Me</span></Frame>
+            <Frame variants={item} background="black" width={700} height={10} radius="5%" style={{color:'white', fontSize:70, verticalAlign:'center'}}><span style={{color:'#E0C097'}}>My Little Birthday Present For You</span></Frame>
           </Stack>
 
           <Frame top={300} left={270} width={1150} height={150} background="black" variants={item} >
@@ -57,13 +58,13 @@ export default function Intro() {
               >
               {/* Stack animation */}
               <Frame background="black" width={550} height={130}>
-                <Frame background="#B85C38" size={100}  center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'250x', fontWeight:'bold'}}>Only</Frame>
+                <Frame background="#B85C38" size={100}  center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'35px', fontWeight:'bold'}}>❤️</Frame>
                 <Frame background="#ECDBBA" className='ubutton'
                 size={100} center initial={{ x:0, y:0, borderRadius:'50%' }} 
                 animate={{ x:0, y:0, borderRadius:'45%' }} transition={{ delay:1 }} 
-                style={{fontSize:'20px', fontWeight:'bold'}}
-                onClick={handleOnClick}>You</Frame>
-                <Frame background="#B85C38" size={100} center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:-120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'20px', fontWeight:'bold'}}>To</Frame>
+                style={{fontSize:'35px', fontWeight:'bold'}}
+                onClick={handleOnClick}>🎁</Frame>
+                <Frame background="#B85C38" size={100} center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:-120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'35px', fontWeight:'bold'}}>❤️</Frame>
               </Frame>
             </Stack>
           </Frame>
@@ -73,5 +74,7 @@ export default function Intro() {
             </Frame>
 
       </Frame>
+      
+      </>
   );
 }

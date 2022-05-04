@@ -17,7 +17,6 @@ export default function Text({textMsg, duration, delay}) {
             delay: delay,
         }}
         width={"70%"}
-        style={{border:'1px solid black'}}
         >
             {textMsg}
         </Frame>

@@ -6,7 +6,8 @@ import Home from './components/home';
 import Intro from './components/intro';
 import Pics from './components/pics';
 import Password from './components/pass';
-import Pics2 from './components/pics2';
+
+import SoundAndHome from './components/soundAndHome';
 
 function App() {
   const [active, setActive] = useState(false);
@@ -20,12 +21,12 @@ function App() {
           <Route path="/wish-card" component={Home} exact/>
           <Route path="/main" component={Intro} exact/>
           <Route path="/iagly" component={Pics} exact/>
-          <Route path="/ily" component={Pics2} exact/>
           </>
           :
-          <Route path="/" exact render={(props) => <Password setActive={setActive} {...props} /> }/>
+          <Route exact path="*" render={(props) => <Password setActive={setActive} {...props} /> }/>
         }
       </Switch>
+        <SoundAndHome/>
     </main>
   );
 }

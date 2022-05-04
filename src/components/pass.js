@@ -24,7 +24,7 @@ export default function Password ({setActive}) {
     return (
       <div className="pass-page">
       <div className="prompt">
-        Riddle me this. it is floating, yet there is a market. But when is it?
+        Riddle me this. The place is a market and it is floating. The beginning. When is it?
       </div>
       <center>
         <form method="get" className="digit-group" data-group-name="digits" data-autosubmit="false" autoComplete="off">

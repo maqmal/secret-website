@@ -43,7 +43,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay:3.5 }}
                 width={"120%"}
                 >
-                  Happy Birthday Nabila Cantik
+                  Happy Birthday Nabila Cantik 🎈🎂🎈
               </Frame>
             </Frame>
       </Frame>
