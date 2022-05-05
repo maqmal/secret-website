@@ -26,7 +26,7 @@ export default function Intro() {
   return (
     <>
       <Frame 
-        background={'black'}
+        background={'#694E4E'}
         variants={container}
         initial="hidden"
         animate="show"
@@ -46,10 +46,10 @@ export default function Intro() {
             initial="hidden"
             animate="show"
             >
-            <Frame variants={item} background="black" width={700} height={10} radius="5%" style={{color:'white', fontSize:70, verticalAlign:'center'}}><span style={{color:'#E0C097'}}>My Little Birthday Present For You</span></Frame>
+            <Frame variants={item} background="#694E4E" width={700} height={10} radius="5%" style={{color:'white', fontSize:70, verticalAlign:'center'}}><span style={{color:'#F3C5C5'}}>My Little Birthday Present For You</span></Frame>
           </Stack>
 
-          <Frame top={300} left={270} width={1150} height={150} background="black" variants={item} >
+          <Frame top={300} left={270} width={1150} height={150} background="#694E4E" variants={item} >
             <Stack
               center
               distribution="space-evenly"
@@ -57,19 +57,19 @@ export default function Intro() {
               padding={20}
               >
               {/* Stack animation */}
-              <Frame background="black" width={550} height={130}>
-                <Frame background="#B85C38" size={100}  center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'35px', fontWeight:'bold'}}>❤️</Frame>
+              <Frame background="#694E4E" width={550} height={130}>
+                <Frame background="#C1A3A3" size={100}  center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'35px', fontWeight:'bold'}}>❤️</Frame>
                 <Frame background="#ECDBBA" className='ubutton'
                 size={100} center initial={{ x:0, y:0, borderRadius:'50%' }} 
                 animate={{ x:0, y:0, borderRadius:'45%' }} transition={{ delay:1 }} 
                 style={{fontSize:'35px', fontWeight:'bold'}}
                 onClick={handleOnClick}>🎁</Frame>
-                <Frame background="#B85C38" size={100} center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:-120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'35px', fontWeight:'bold'}}>❤️</Frame>
+                <Frame background="#C1A3A3" size={100} center initial={{ x:0, y:0, borderRadius:'50%' }} animate={{ x:-120, y:0, borderRadius:'45%' }} transition={{ delay:1 }} style={{fontSize:'35px', fontWeight:'bold'}}>❤️</Frame>
               </Frame>
             </Stack>
           </Frame>
 
-            <Frame top={140} left={630} background={'transparent'} variants={item}>
+            <Frame top={133} left={630} background={'transparent'} variants={item}>
               <CardStack/>
             </Frame>
 

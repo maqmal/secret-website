@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import move from "lodash-move";
 import '../App.scss';
 
-const CARD_COLORS = ["#f0b74f", "#cb7c7a", "#D49B54", "#E2703A"];
+const CARD_COLORS = ["#F3C5C5", "#cb7c7a", "#FFBCD1", "#CE7BB0"];
 const CARD_OFFSET = 10;
 const SCALE_FACTOR = 0.06;
 
@@ -31,7 +31,7 @@ const cardStyle = {
 };
 
 const cardText = {
-  '#f0b74f':
+  '#F3C5C5':
   [`Happy birthday Nabila cantiikk :) I wish I could say it directly to you while hugging you. I miss you. 
   `, 
   `Semoga semua cita-cita ayang tercapai, and make your parents proud because their sweet baby girl is so amazing!`, `You could've chosen anybody to share
@@ -44,14 +44,14 @@ const cardText = {
   you used to choose me`, 'Semangat ngerjain TA cantiik. Ganbatte! You can do it! Go get it sweet girl! It almost done and tadaaa, graduation :D', `Happy birthday Nabila cantiikk :) I wish I could say it directly to you while hugging you. I miss you. 
   `]
   ,
-  '#D49B54':
+  '#FFBCD1':
   [`You could've chosen anybody to share
   your life with and I'm so grateful that
   I am your choice :)`, 
   'Semangat ngerjain TA cantiik. Ganbatte! You can do it! Go get it sweet girl! It almost done and tadaaa, graduation :D', `Happy birthday Nabila cantiikk :) I wish I could say it directly to you while hugging you. I miss you. 
   `, `Semoga semua cita-cita kamu tercapai, and make your parents proud because their sweet baby girl is so amazing!`]
   ,
-  '#E2703A':
+  '#CE7BB0':
   ['Semangat ngerjain TA cantiik. Ganbatte! You can do it! Go get it sweet girl! You almost done it and tadaaa, graduation :D', `Happy birthday Nabila cantiikk :) I wish I could say it directly to you while hugging you. I miss you. 
   `, `Semoga semua cita-cita kamu tercapai, and make your parents proud because their sweet baby girl is so amazing!`, `You could've chosen anybody to share
   your life with and I am so grateful that
@@ -68,7 +68,6 @@ const CardStack = () => {
       <ul style={cardWrapStyle}>
         {cards.map((color, index) => {
           const canDrag = index === 0;
-          console.log(cards[0])
           return (
             <div class="tooltip">
                 <motion.li

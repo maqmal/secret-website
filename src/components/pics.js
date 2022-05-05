@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <Frame
-        background={'black'}
+        background={'#fadce5'}
         left={0}
         top={0}
         width={"100%"}
@@ -85,6 +85,8 @@ export default function Home() {
                     <li><p style={{fontSize:'20px'}}>Sometimes its hard for me to fall asleep when I'm with you</p></li>
                     <li><p style={{fontSize:'20px'}}>Because reality is finally better than my dreams.</p></li>
                     <li><p style={{fontSize:'20px'}}>I love you so much my dear Nabila Herman. <br/>Don't let your heart confused again. ❤️</p></li>
+                    <br/>
+                    <li><p style={{fontSize:'20px'}}>- Eternal love, Aqmal ❤️</p></li>
                   </ul>
                 </div>
             :
